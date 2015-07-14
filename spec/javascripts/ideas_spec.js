@@ -5,13 +5,5 @@ describe('idea spec', function () {
     assert.equal($('.ideas').length, 1);
   });
 
-  it('should work', function (done) {
-    MagicLamp.load('ideas/index');
-    $.getJSON('/ideas').then(function (ideas) {
-      assert.equal(ideas.idea.length, 2);
-      done();
-    });
-  });
-
 });
 
